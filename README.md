@@ -1,6 +1,6 @@
 # 剪辑 Skills
 
-> 用 Claude Code 做的视频剪辑 Agent，比剪映好用10倍
+> 用 Claude Code Skills 做的视频剪辑 Agent
 
 ## 功能
 
