@@ -1,8 +1,7 @@
 # 本仓库说明
 
-> opencode 目前不支持子目录内的 skill.md 识别和中文的 skill name，所以在原po的基础上把各个 skill.md 拿出来，并把 skill name 改为英文。
-
----
+> opencode 目前不支持子目录内的 skill.md 识别、中文的 skill name，所以在原po的基础上把各个 skill.md 拿出来，并把 skill name 改为英文。
+> 同时 opencode 不支持用斜杠命令显式调用 skill，所以与原po不同的是，下面的使用示例中不要在 skill name 前加/，或者可以用触发词隐式触发
 
 # 剪辑 Skills
 
@@ -32,7 +31,7 @@ rm -rf ~/.config/opencode/skill/videocut-opencode
 打开 opencode，输入：
 
 ```
-/videocut-install
+videocut-install
 ```
 
 AI 会自动安装依赖、下载模型（约5GB）。
@@ -42,7 +41,7 @@ AI 会自动安装依赖、下载模型（约5GB）。
 ### 剪口播
 
 ```
-/videocut-verbal
+videocut-verbal
 ```
 
 AI 自动：转录 → 识别口误/静音/语气词 → 生成审查稿 → 等你确认
@@ -50,7 +49,7 @@ AI 自动：转录 → 识别口误/静音/语气词 → 生成审查稿 → 等
 ### 执行剪辑
 
 ```
-/videocut-cut
+videocut-cut
 ```
 
 确认后执行删除，循环审查直到零口误。
@@ -58,7 +57,7 @@ AI 自动：转录 → 识别口误/静音/语气词 → 生成审查稿 → 等
 ### 加字幕
 
 ```
-/videocut-subtitle
+videocut-subtitle
 ```
 
 Whisper 转录 → 词典纠正 → 烧录字幕。
@@ -66,7 +65,7 @@ Whisper 转录 → 词典纠正 → 烧录字幕。
 ### 自更新
 
 ```
-/videocut-latest
+videocut-latest
 ```
 
 告诉 AI 你的偏好，它会记住。
