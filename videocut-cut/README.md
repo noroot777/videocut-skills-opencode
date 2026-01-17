@@ -2,7 +2,7 @@
 架构守护者：一旦此文件夹内容变化，请更新此文件
 -->
 
-# videocut:剪辑
+# videocut-cut
 
 > FFmpeg 视频剪辑执行 skill
 

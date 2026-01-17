@@ -1,4 +1,4 @@
-# videocut:字幕
+# videocut-subtitle
 
 > 字幕生成与烧录
 
