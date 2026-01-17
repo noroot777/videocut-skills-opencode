@@ -22,9 +22,9 @@
 
 ```bash
 # 克隆到 Claude Code skills 目录
-git clone https://github.com/noroot777/videocut-skills-opencode.git ~/.claude/skills/videocut
-mv ~/.claude/skills/videocut/videocut-* ~/.claude/skills/
-rm -rf ~/.claude/skills/videocut
+git clone https://github.com/noroot777/videocut-skills-opencode.git ~/.claude/skills/videocut-opencode
+mv ~/.claude/skills/videocut-opencode/videocut-* ~/.claude/skills/
+rm -rf ~/.claude/skills/videocut-opencode
 ```
 
 ### 2. 安装环境
