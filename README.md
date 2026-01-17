@@ -6,7 +6,7 @@
 
 # 剪辑 Skills
 
-> 用 Claude Code Skills 做的视频剪辑 Agent
+> 用 Skills 做的视频剪辑 Agent
 
 ## 功能
 
@@ -21,7 +21,7 @@
 ### 1. 下载 Skills
 
 ```bash
-# 克隆到 Claude Code skills 目录
+# 克隆到 opencode skill 目录
 git clone https://github.com/noroot777/videocut-skills-opencode.git ~/.config/opencode/skill/videocut-opencode
 mv ~/.config/opencode/skill/videocut-opencode/videocut-* ~/.config/opencode/skill/
 rm -rf ~/.config/opencode/skill/videocut-opencode
@@ -29,7 +29,7 @@ rm -rf ~/.config/opencode/skill/videocut-opencode
 
 ### 2. 安装环境
 
-打开 Claude Code，输入：
+打开 opencode，输入：
 
 ```
 /videocut-install
