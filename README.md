@@ -1,6 +1,7 @@
 # 本仓库说明
 
 > opencode 目前不支持子目录内的 skill.md 识别、中文的 skill name，所以在原po的基础上把各个 skill.md 拿出来，并把 skill name 改为英文。
+>
 > 同时 opencode 不支持用斜杠命令显式调用 skill，所以与原po不同的是，下面的使用示例中不要在 skill name 前加/，或者可以用触发词隐式触发
 
 # 剪辑 Skills

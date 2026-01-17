@@ -90,6 +90,9 @@ brew install ffmpeg
 # Ubuntu
 sudo apt install ffmpeg
 
+# windows
+winget install Gyan.FFmpeg
+
 # 验证
 ffmpeg -version
 ```
