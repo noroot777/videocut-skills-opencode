@@ -1,3 +1,9 @@
+# 本仓库说明
+
+> opencode 目前不支持子目录内的 skill.md 识别和中文的 skill name，所以在原po的基础上把各个 skill.md 拿出来，并把 skill name 改为英文。
+
+---
+
 # 剪辑 Skills
 
 > 用 Claude Code Skills 做的视频剪辑 Agent
@@ -16,7 +22,9 @@
 
 ```bash
 # 克隆到 Claude Code skills 目录
-git clone https://github.com/Ceeon/videocut-skills.git ~/.claude/skills/videocut
+git clone https://github.com/noroot777/videocut-skills-opencode.git ~/.claude/skills/videocut
+mv ~/.claude/skills/videocut/videocut-* ~/.claude/skills/
+rm -rf ~/.claude/skills/videocut
 ```
 
 ### 2. 安装环境
@@ -24,7 +32,7 @@ git clone https://github.com/Ceeon/videocut-skills.git ~/.claude/skills/videocut
 打开 Claude Code，输入：
 
 ```
-/videocut:安装
+/videocut-install
 ```
 
 AI 会自动安装依赖、下载模型（约5GB）。
@@ -34,7 +42,7 @@ AI 会自动安装依赖、下载模型（约5GB）。
 ### 剪口播
 
 ```
-/videocut:剪口播
+/videocut-verbal
 ```
 
 AI 自动：转录 → 识别口误/静音/语气词 → 生成审查稿 → 等你确认
@@ -42,7 +50,7 @@ AI 自动：转录 → 识别口误/静音/语气词 → 生成审查稿 → 等
 ### 执行剪辑
 
 ```
-/videocut:剪辑
+/videocut-cut
 ```
 
 确认后执行删除，循环审查直到零口误。
@@ -50,7 +58,7 @@ AI 自动：转录 → 识别口误/静音/语气词 → 生成审查稿 → 等
 ### 加字幕
 
 ```
-/videocut:字幕
+/videocut-subtitle
 ```
 
 Whisper 转录 → 词典纠正 → 烧录字幕。
@@ -58,7 +66,7 @@ Whisper 转录 → 词典纠正 → 烧录字幕。
 ### 自更新
 
 ```
-/videocut:自更新
+/videocut-latest
 ```
 
 告诉 AI 你的偏好，它会记住。
@@ -67,11 +75,11 @@ Whisper 转录 → 词典纠正 → 烧录字幕。
 
 | Skill | 功能 | 触发词 |
 |-------|------|--------|
-| `videocut:安装` | 环境准备、模型下载 | 安装、初始化 |
-| `videocut:剪口播` | 转录 + 口误/静音识别 → 审查稿 | 剪口播、处理视频 |
-| `videocut:剪辑` | 执行 FFmpeg 剪辑 + 循环审查 | 执行剪辑、确认 |
-| `videocut:字幕` | 字幕生成与烧录 | 加字幕、生成字幕 |
-| `videocut:自更新` | 从错误中学习，更新规则 | 更新规则、记录反馈 |
+| `videocut-install` | 环境准备、模型下载 | 安装、初始化 |
+| `videocut-verbal` | 转录 + 口误/静音识别 → 审查稿 | 剪口播、处理视频 |
+| `videocut-cut` | 执行 FFmpeg 剪辑 + 循环审查 | 执行剪辑、确认 |
+| `videocut-subtitle` | 字幕生成与烧录 | 加字幕、生成字幕 |
+| `videocut-latest` | 从错误中学习，更新规则 | 更新规则、记录反馈 |
 
 ## 依赖
 

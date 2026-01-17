@@ -1,5 +1,5 @@
 ---
-name: videocut:自更新
+name: videocut-latest
 description: 自更新 skills。记录用户反馈，更新方法论和规则。触发词：更新规则、记录反馈、改进skill
 ---
 
