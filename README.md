@@ -66,7 +66,7 @@ Whisper 转录 → 词典纠正 → 烧录字幕。
 ### 自更新
 
 ```
-videocut-latest
+videocut-learn
 ```
 
 告诉 AI 你的偏好，它会记住。
@@ -79,7 +79,7 @@ videocut-latest
 | `videocut-verbal` | 转录 + 口误/静音识别 → 审查稿 | 剪口播、处理视频 |
 | `videocut-cut` | 执行 FFmpeg 剪辑 + 循环审查 | 执行剪辑、确认 |
 | `videocut-subtitle` | 字幕生成与烧录 | 加字幕、生成字幕 |
-| `videocut-latest` | 从错误中学习，更新规则 | 更新规则、记录反馈 |
+| `videocut-learn` | 从错误中学习，更新规则 | 更新规则、记录反馈 |
 
 ## 依赖
 

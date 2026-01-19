@@ -2,7 +2,7 @@
 架构守护者：一旦本文件夹有任何变化（新增/删除/重命名文件），请更新此文件
 -->
 
-# videocut-latest
+# videocut-learn
 
 > Agent 自进化机制
 
@@ -16,7 +16,7 @@
 ## 作用范围
 
 ```
-videocut-latest 可以修改:
+videocut-learn 可以修改:
 
 ├── /CLAUDE.md           # 用户画像
 └── /*/tips/*.md         # 各 skill 的方法论
